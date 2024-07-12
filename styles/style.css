@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+
+:root {
+    --color-primario: #E5E5E5;
+    --color-secundario: #E2DFDF;
+    --color-terciario: rgb(102, 102, 104);
+    --color-hover: #272727;
+
+    --fuente-roboto: 'Roboto',sans-serif;
+    --fuente-sans: 'Sans-serif';
+}
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 1.125rem;
+}
+
+p{
+    font-size: 0.875rem;
+}
+
+body{
+    font-family: var(--fuente-roboto);
+    background-color: var(--color-primario);
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 10px;
+}
+
+.contenedor__entrada
+{
+    display: flex;
+    text-align: center;
+    flex-direction: column;   
+    padding: 0px 0px 4%;
+
+}
+
+.contenedor__salida
+{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url("./../assets/ningun_texto.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+textarea{
+    field-sizing:content;
+    font-size: 1.175rem;
+    width: 288px;
+    height: 250px;
+    border: none;
+    resize: both;
+}
+
+.textarea__entrada
+{
+    width: 100%;
+    height: 300px;
+    background-color: var(--color-secundario);
+}
+
+.textarea__salida
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mensaje__advertencia
+{
+    display: flex;
+    justify-content: left;
+    padding: 2px;
+}
+
+button
+{
+    font-size: 1.375rem;
+    border-radius: 24px;
+    height: 50px;
+    width: 200px;
+}
+
+.boton__encriptacion
+{
+    position: relative;
+    border: none;
+    background-color: #0A3871;
+    color: white;
+}
+
+.boton__encriptacion:hover
+{
+    background-color: rgb(142, 90, 126);
+    color: white;
+}
+
+.boton__desencriptacion
+{
+    position: relative;
+    border: 1px solid black;;
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.boton__desencriptacion:hover
+{
+    background-color: rgb(142, 90, 126);
+    color: white;
+}
+
+.boton__copiar
+{
+    position: relative;
+    border:1px solid black;
+    background-color: white;
+    color: #0A3871;
+}
+
+.boton__copiar:hover
+{
+    background-color: gray;
+    color: white;
+}
+
+.footer{
+    color:var(--color-secundario);
+    background-color: var(--color-terciario);
+    padding: 0px;
+    text-align: center;
+    font-family: var(--fuente-sans);
+    font-size: 0.6rem;
+    font-weight: 400;
+}
+
+
+@media (min-width: 720px) {
+
+    .contenedor{
+        flex-direction: row;
+        width: auto;
+        justify-content: center;
+    }
+
+    .contenedor__entrada
+    {
+        height: 40%;
+        padding: 0px 20px;
+    }
+    .contenedor__salida{
+        width: 310px;
+        height: 700px;
+        padding: 0px 0px 5px;
+        background-image: url("./../assets/muneco_mensaje.png");
+        background-position:center;
+    }
+
+    textarea{
+        resize: none;
+    }
+
+    .textarea__entrada
+    {
+        
+        height: 575px;
+    }
+
+    .textarea__salida
+    {
+        height: 600px;
+    }
+}

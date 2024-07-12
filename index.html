@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/alura.png">
+    </header>
+    <main class="contenedor">
+        <section id="encriptar">
+            <div class="contenedor__entrada">
+                <div>
+                    <textarea class="textarea__entrada" id="texto-entrada" placeholder="Ingrese el texto aquí..."></textarea>
+                </div>
+                <div>
+                    <img class="mensaje__advertencia" src="./assets/advertencia.png">
+                </div>
+                <div>
+                    <button class="boton__encriptacion" id="btn-encriptacion">Encriptar</button>
+                    <button class="boton__desencriptacion" id="btn-desencriptacion">Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <section id="salida">
+            <div class="contenedor__salida">
+                <div>
+                    <textarea class="textarea__salida" style="visibility: hidden;" id="texto-salida" readonly placeholder="Resultado..."></textarea>
+                </div>
+                <div>
+                    <button class="boton__copiar" style="visibility: hidden;" id="btn-copiar">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <footer class="footer">
+        <p>&copy; Desarrollado por Armando Caballero Alvarado</p>
+    </footer>
+</body>
+</html>
